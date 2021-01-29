@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane onKeyPressed="#keyListener" prefHeight="558.0" prefWidth="364.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+      <ListView fx:id="output_list" layoutX="2.0" layoutY="3.0" prefHeight="510.0" prefWidth="357.0" />
+        <Button fx:id="send" layoutX="287.0" layoutY="518.0" mnemonicParsing="false" onAction="#sendMessage" prefHeight="35.0" prefWidth="71.0" text="Send" />
+        <TextField fx:id="input_field" layoutX="3.0" layoutY="518.0" onInputMethodTextChanged="#keyListener" prefHeight="35.0" prefWidth="279.0">
+            <font>
+                <Font size="11.0" />
+            </font>
+        </TextField>
+    </children>
+</AnchorPane>
